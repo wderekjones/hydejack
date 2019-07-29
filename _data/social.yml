@@ -35,7 +35,7 @@ telegram:
   name: Telegram
   icon: icon-telegram
 twitter:
-  name: Twitter
+  name: DerekScience
   icon: icon-twitter
   prepend: 'https://twitter.com/'
 vine:

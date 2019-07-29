@@ -19,18 +19,16 @@ baseurl:               ''
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Hydejack
+title:                 Derek Jones
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  "Best Jekyll Theme by a Mile".
-  **Hydejack** is your presence on the web, featuring a blog, portfolio, and resume.
+ Data Scientist at Lawrence Livermore National Laboratory with a research focus in the areas of machine learning, cheminformatics, biophysics, and molecular biology
 
 # A shorter description for the sidebar.
 tagline:               >
-  "Best Jekyll Theme by a Mile".
-  Open `_config.yml` to edit this text.
+  Data Scientist working in Machine Learning applications for Drug Discovery 
 
 # A list of keywords for your blog
 keywords:              []
@@ -38,24 +36,23 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/icons/icon.png
+logo:                  /assets/icons/profile.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                Derek Jones
+  email:               jones289@llnl.gov
   # Used by `jekyll-seo-tag`:
-  # twitter:             <username>
-
+  twitter:             DerekScience
+  social:
+        twitter: DerekScience
 # Add links to the sidebar.
 menu:
-  - title:             Hydejack
-    url:               /hydejack/
-  - title:             Hyde
-    url:               /hyde/
-  - title:             Documentation
-    url:               /docs/
-  - title:             About
+  - title:             research
+    url:               /research/
+  - title:             cv
+    url:               /cv/
+  - title:             about
     url:               /about/
 
 # Add links to the footer.
@@ -81,7 +78,7 @@ paginate_path:         /page-:num/
 # ========================================================================================
 
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/deep_dream_garden.jpeg
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
@@ -291,8 +288,8 @@ plugins:
 #   yandex:              <verification-id>
 
 # Used for Twitter cards
-# twitter:
-#   username:            <shortname>
+twitter:
+   username:            DerekScience
 
 # Used for Facebook open graph
 # facebook:
@@ -301,10 +298,10 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
+social:
+   name:                Derek Jones
+   links:
+      - https://twitter.com/DerekScience
 #     - https://github.com/<username>
 
 
