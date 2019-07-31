@@ -47,6 +47,8 @@
     "hy-img": "^1.0.0-hydejack.10",
     "hy-push-state": "^1.0.0-pre.25",
     "intersection-observer": "^0.5.1",
+    "jquery": "^3.0.0",
+    "popper.js": "^1.11.0",
     "resize-observer-polyfill": "^1.5.1",
     "rxjs": "^6.4.0",
     "smoothscroll-polyfill": "^0.4.3",

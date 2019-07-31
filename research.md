@@ -1,10 +1,7 @@
 ---
-header:
-  overlay_image: "gg_bridge.png"
-  overlay_filter: rgba(104, 152, 242, 0.25)
 permalink: /research/
 title: "research"
-author_profile: true
+
 ---
 
 ## conference papers
