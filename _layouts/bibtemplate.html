@@ -1,0 +1,50 @@
+---
+---
+{{reference}}
+<!-- {% if entry.abstract %}
+  <button class="btn btnId btnPub--abstract" id="b_{{key}}-abstract" style="outline:none;">Abstract</button>
+{% endif %} -->
+
+<!-- <button class="btn btnId btnPub--BibTex" id="b_{{key}}-bibtex" style="outline:none;">BibTeX</button> -->
+<!--
+{% if link %}
+  <a href="{{link}}"><button class="btn btnId btnPub--download" style="outline:none; position:relative;white-space: normal;">PDF</button></a>
+{% endif %}
+
+{% if links['sup.pdf'] %}
+  <a href="{{links['sup.pdf']}}"><button class="btn btnId btnPub--supplement" style="outline:none; position:relative;white-space: normal;">Supplement</button></a>
+{% endif %}-->
+
+<div class="dropDownBibtex" id="{{key}}-bibtex">
+  <pre>{{entry.bibtex}}</pre>
+</div>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<p>A function is triggered when the button is clicked. The function outputs some text in a p element with id="demo".</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+<!-- <details closed>
+  <pre>{{entry.bibtex}}</pre>
+  </details> -->
+
+<!-- <div class="dropDownAbstract" id="{{key}}-abstract">
+  {{entry.abstract}}
+</div> -->
+<!-- <script src="/js/jquery.min.js"></script>
+{% include buttons.html %} -->
+
+<div class="dropdown">
+	  <button class="dropbtn">Dropdown</button>
+	    <div class="dropdown-content">
+		        <a href="#">Link 1</a>
+			    <a href="#">Link 2</a>
+			        <a href="#">Link 3</a>
+				  </div>
+</div>
