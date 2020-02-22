@@ -4,10 +4,13 @@ title: "research"
 
 ---
 
+## journals
+{% bibliography --file journals%}
+
+---
+
 ## conference papers
-
 {% bibliography --file conference%}
-
 
 ---
 
