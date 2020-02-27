@@ -52,8 +52,8 @@ menu:
     url:               /about/
   - title:             research
     url:               /research/
-    #- title:             cv
-    #url:               /cv/
+  - title:             cv
+    url:               /cv/
   
 
 # Add links to the footer.
@@ -253,6 +253,12 @@ exclude:
   - .sass-cache
 include:
   - LICENSE.md
+
+# gems
+# ========================================================================================
+gems:
+  - jekyll-redirect-from
+
 
 
 # Plugins
