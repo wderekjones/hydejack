@@ -25,6 +25,7 @@ title: "research"
 
 {% bibliography --file posters%}
 
+---
 
 ## theses
 

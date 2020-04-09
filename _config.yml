@@ -5,7 +5,7 @@
 # Set to https://<username>.github.io when hosting on GitHub Pages
 # (unless you are using a custom domain).
 url:                   https://domain.tld
-
+url:    https://williamdjones.github.io
 # IMPORTANT: Set The "base URL" of your site.
 # When your site sits in a subdirectory, set to /<name of directory>
 # (with leading /, but without the < >).
@@ -19,7 +19,7 @@ baseurl:               ''
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Derek Jones
+title:                 derek jones
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -36,7 +36,7 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/icons/profile.png
+logo:                  /assets/icons/derek_jones_thumb.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -53,7 +53,7 @@ menu:
   - title:             research
     url:               /research/
   - title:             cv
-    url:               /cv/
+    url:               /files/derek_jones_cv.pdf
   
 
 # Add links to the footer.
@@ -79,18 +79,23 @@ paginate_path:         /page-:num/
 # ========================================================================================
 
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/deep_dream_garden.jpeg
-accent_color:          rgb(79,177,186)
+#accent_image:          /assets/img/deep_dream_garden.jpeg
+accent_image:   none
+#accent_color:          rgb(79,177,186)
+accent_color:   rgb(90, 0, 26)
+
+
 
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
 # Defaults to `accent_color`.
 theme_color:           rgb(25,55,71)
-
+theme_color:    rgb(219, 201, 187)
+theme_color:    rgb(142, 168, 157)
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://hydejack.com/docs/configuration/>
 google_fonts:          Roboto+Slab:400|Noto+Sans:400,400i,700,700i
-
+google_fonts:   Nunito:wght@300
 # The text font. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
 font:                  Noto Sans, Helvetica, Arial, sans-serif
@@ -169,11 +174,11 @@ hydejack:
 
   # Set to `true` if you do not want parts of the css inlined in <head/>
   # This will increase site build speed dramatically!
-  no_inline_css:       false
+  no_inline_css:       true
 
   # Set to `true` if you don't intend on changing the accent color on a per-page basis.
   # This will increase site build speed!
-  no_page_style:       false
+  no_page_style:       true
 
   # Code blocks and tables "break" the layout by spanning the full available width.
   # Set this to true if you want them to be the same width as other content.
@@ -258,7 +263,7 @@ include:
 # ========================================================================================
 gems:
   - jekyll-redirect-from
-
+  - jekyll-paginate
 
 
 # Plugins
