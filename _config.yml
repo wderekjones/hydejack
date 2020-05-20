@@ -367,7 +367,7 @@ scholar:
         bibliography_template: bib
 
         details_dir: bibliography
-        details_layout: bibtex.html
-        details_link: more info
+        details_layout: bib_detail.html
+        details_link: ''
 
         #query: "@*"
