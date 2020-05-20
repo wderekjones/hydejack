@@ -342,6 +342,13 @@ kramdown:
     preview:           true
     preview_as_code:   true
 
+  syntax_highlighter: rouge
+  input: GFM
+  auto_ids:       true
+  toc_levels:     1..3
+
+
+
 compress_html:
   comments:            ["<!-- ", " -->"]
   clippings:           all
@@ -371,3 +378,5 @@ scholar:
         details_link: ''
 
         #query: "@*"
+        #
+highlighter: rouge

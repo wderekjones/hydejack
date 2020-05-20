@@ -10,4 +10,4 @@ cd ./_bibliography
 
 cd $cur_dir
 
-bundle exec jekyll serve
+bundle exec jekyll serve -V
