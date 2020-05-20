@@ -4,6 +4,12 @@
 
 # About
 
+<p align="center">
+<!--![image-title-here](/assets/icons/derek_jones_thumb.png){:class="img-responsive"}-->
+<img src="/assets/icons/derek_jones_thumb.png">
+</p>
+
+
 Hi, I'm Derek Jones. 
 
 I work on scalable machine learning/deep learning research for drug discovery at Lawrence Livermore National Laboratory and the [ATOM Constortium](https://atomscience.org). 

@@ -36,7 +36,7 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/icons/derek_jones_thumb.png
+#logo:                  /assets/icons/derek_jones_thumb.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -261,9 +261,9 @@ include:
 
 # gems
 # ========================================================================================
-gems:
-  - jekyll-redirect-from
-  - jekyll-paginate
+#gems:
+#  - jekyll-redirect-from
+#  - jekyll-paginate
 
 
 # Plugins
@@ -280,7 +280,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-titles-from-headings
-
+  - jekyll-redirect-from
+  - jekyll-paginate
+  - citeproc
 # Theme
 # ---------------------------------------------------------------------------------------
 
@@ -350,3 +352,23 @@ compress_html:
 
 sass:
   style:               compressed
+
+
+scholar:
+        style: apa
+        locale: en
+
+        sort_by: year
+        order: descending
+        bibliography_list_tag: ul
+
+        source: ./_bibliography
+        repository: pdf
+        bibliography: full_references.bib
+        bibliography_template: bib
+
+        details_dir: bibliography
+        details_layout: bibtex.html
+        details_link: more info
+
+        #query: "@*"

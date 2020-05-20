@@ -26,7 +26,8 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
   gem "jekyll-titles-from-headings"
-  gem "jekyll-scholar" 
+  gem "jekyll-scholar"
+  gem 'citeproc', '~> 1.0', '>= 1.0.10' 
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

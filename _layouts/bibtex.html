@@ -1,0 +1,34 @@
+---
+
+layout: base
+---
+
+
+<html>
+<head></head>
+<body>
+  <h1>{{ page.entry.title }}</h1>
+  <h2>
+	{% if page.entry.author_array.size > 1 %}
+		{% assign lastauth = page.entry.author_array.last %}
+ 
+		{% for author in page.entry.author_array %}
+  			{% if lastauth.first == author.first %}
+  				{{ author.first | prepend: " and " | append: " " | append: author.last}}
+  	
+  			{% else %}
+  				{{ author.first | append: " " | append: author.last | append: ','}}
+
+  			{% endif %}
+		{% endfor %}
+	{% else %}
+		{{ page.entry.author_array[0].first | append: " " | append: page.entry.author_array[0].last }}
+	{% endif %}
+  </h2>
+  <p>{{ page.entry.abstract }}</p>
+
+<pre>{{ page.entry.bibtex }}</pre>
+</body>
+</html>
+
+

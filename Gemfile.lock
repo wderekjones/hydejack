@@ -5,7 +5,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     bibtex-ruby (4.4.7)
       latex-decode (~> 0.0)
-    citeproc (1.0.9)
+    citeproc (1.0.10)
       namae (~> 1.0)
     citeproc-ruby (1.1.10)
       citeproc (~> 1.0, >= 1.0.9)
@@ -94,6 +94,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  citeproc (~> 1.0, >= 1.0.10)
   jekyll
   jekyll-default-layout
   jekyll-feed

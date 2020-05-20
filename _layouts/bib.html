@@ -1,0 +1,18 @@
+---
+---
+
+<!-- got this from https://github.com/alshedivat/al-folio/blob/master/_layouts/bib.html -->
+
+
+<div id="{{entry.key}}">
+	{{reference}}
+
+<span class="links">
+  
+  {% if entry.pdf %}
+  	[<a href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
+  {% endif %}
+</span>
+
+
+</div>
