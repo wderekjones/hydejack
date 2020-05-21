@@ -5,30 +5,31 @@
 	{{reference}}
 </div>
 
+
+
 <div>
 <span class="links">
   
+  [<a style="color:gray;cursor: pointer; cursor: hand;" onclick="toggle_visibility('{{entry.key}}')">bibtex</a>]
   {% if entry.pdf %}
   	[<a href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
   {% endif %}
-  [{% cite_details key --text more details %}]
   
   {% if entry.slides %}  
   	[<a href="{{ entry.slides | prepend: '/assets/slides/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">slides</a>]
   {% endif %}
+  {% if entry.code %}
+  	[<a href="{{ entry.code }}" target="_blank">code</a>]
+  {% endif %}
+  [{% cite_details key --text more details %}]
 
-  [<a style="color:gray;cursor: pointer; cursor: hand;" onclick="toggle_visibility('{{entry.key}}')">bibtex</a>]
-  <div id="'{{entry.key}}'" style="display:none;">
-	<small><div class="highlighter-rouge"><pre class="highlight">
-<code>{{ entry.bibtex }}</code>	
-</pre>
-	</div></small></div>
 </span>
 
 
 </div>
 
 
+<div id="'{{entry.key}}'" style="display:none;"><small><div class="highlighter-rouge"><pre class="highlight"><code>{{ entry.bibtex }}</code></pre></div></small></div>
 
 <script type="text/javascript">
    function toggle_visibility(block_id) {

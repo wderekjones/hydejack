@@ -369,7 +369,7 @@ scholar:
         bibliography_list_tag: ul
 
         use_raw_bibtex_entry: false
-        bibtex_skip_fields: ["abstract", "pdf", "slides"]
+        bibtex_skip_fields: ["abstract", "pdf", "slides", "code"]
         source: ./_bibliography
         repository: pdf
         bibliography: full_references.bib
