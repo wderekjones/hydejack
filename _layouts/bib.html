@@ -3,18 +3,21 @@
 
 <div id="{{entry.key}}">
 	{{reference}}
+</div>
 
+<div>
 <span class="links">
   
   {% if entry.pdf %}
   	[<a href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
   {% endif %}
   [{% cite_details key --text more details %}]
+  
+  {% if entry.slides %}  
+  	[<a href="{{ entry.slides | prepend: '/assets/slides/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">slides</a>]
+  {% endif %}
 
   [<a style="color:gray;cursor: pointer; cursor: hand;" onclick="toggle_visibility('{{entry.key}}')">bibtex</a>]
-
-
-
   <div id="'{{entry.key}}'" style="display:none;">
 	<small><div class="highlighter-rouge"><pre class="highlight">
 <code>{{ entry.bibtex }}</code>	
