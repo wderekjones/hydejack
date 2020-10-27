@@ -14,6 +14,11 @@ title: "research"
 
 ---
 
+## preprints
+{% bibliography --file preprints%}
+
+---
+
 ## talks
 
 {% bibliography --file talks%}

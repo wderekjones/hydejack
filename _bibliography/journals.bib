@@ -1,46 +1,70 @@
-@article{jones2020improved,
-    title={Improved Protein-ligand Binding Affinity Prediction with Structure-Based Deep Fusion Inference},
-    author={Derek Jones and Hyojin Kim and Xiaohua Zhang and Adam Zemla and Garrett Stevenson and William D. Bennett and Dan Kirshner and Sergio Wong and Felice Lightstone and Jonathan E. Allen},
-    year={2020},
-    eprint={2005.07704},
-    archivePrefix={arXiv},
-    primaryClass={q-bio.BM},
-
-    abstract="Drug discovery is an expensive, lengthy, and sometimes dangerous process. The ability to make accurate computational predictions of drug binding would greatly improve the cost-effectiveness and safety of drug discovery and development. This study incorporates ensemble docking, the use of multiple protein conformations extracted from a molecular dynamics trajectory to perform docking calculations, with additional biomedical data sources and machine learning algorithms to improve the prediction of drug binding. We found that we can greatly increase the classification accuracy of an active vs a decoy compound using these methods over docking scores alone. The best results seen here come from having an individual protein conformation that produces binding features that correlate well with the active vs. decoy classification, in which case we achieve over 99\% accuracy. The ability to confidently make accurate predictions on drug binding would allow for computational polypharamacological networks with insights into side-effect prediction, drug-repurposing, and drug efficacy.",
-    pdf={jones2020improved.pdf},
-    code={https://github.com/llnl/fast},
-}
-
-@article{zhu2020pairwise,
-author = {Zhu, Fangqiang and Zhang, Xiaohua and Allen, Jonathan E. and Jones, Derek and Lightstone, Felice C.},
-title = {Binding Affinity Prediction by Pairwise Function Based on Neural Network},
-journal = {Journal of Chemical Information and Modeling},
-
-year = {2020},
-doi = {10.1021/acs.jcim.0c00026},
-    note ={PMID: 32338892},
-
-URL = { 
-        https://doi.org/10.1021/acs.jcim.0c00026
-    
-},
-eprint = { 
-        https://doi.org/10.1021/acs.jcim.0c00026
-    
-},
-	abstract={We present a new approach to estimate the binding affinity from given three-dimensional poses of protein–ligand complexes. In this scheme, every protein–ligand atom pair makes an additive free-energy contribution. The sum of these pairwise contributions then gives the total binding free energy or the logarithm of the dissociation constant. The pairwise contribution is calculated by a function implemented via a neural network that takes the properties of the two atoms and their distance as input. The pairwise function is trained using a portion of the PDBbind 2018 data set. The model achieves good accuracy for affinity predictions when evaluated with PDBbind 2018 and with the CASF-2016 benchmark, comparing favorably to many scoring functions such as that of AutoDock Vina. The framework here may be extended to incorporate other factors to further improve its accuracy and power.}
-
-}
-
-
 
 @ARTICLE{bennett_transfer_2020,
-
-    title   = "Predicting Small Molecule Transfer Free Energies by Combining Molecular Dynamics Simulations and Deep Learning",
-    author =    "Bennett, Drew and He, Stewart and Bilodeau, Camille and Jones, Derek and Sun, Delin and Kim, Hyojin and Allen, Jonathan and Lightstone, Felice and Ing\'{o}lfsson, Helgi",
-    journal = "ACS Central Science [under review]",
-    
-    year    = "2020"
-
-
+  title    = "Predicting Small Molecule Transfer Free Energies by Combining
+              Molecular Dynamics Simulations and Deep Learning",
+  author   = "Bennett, W F Drew and He, Stewart and Bilodeau, Camille L and
+              Jones, Derek and Sun, Delin and Kim, Hyojin and Allen, Jonathan E
+              and Lightstone, Felice C and Ing{\'o}lfsson, Helgi I",
+  abstract = "Accurately predicting small molecule partitioning and
+              hydrophobicity is critical in the drug discovery process. There
+              are many heterogeneous chemical environments within a cell and
+              entire human body. For example, drugs must be able to cross the
+              hydrophobic cellular membrane to reach their intracellular
+              targets, and hydrophobicity is an important driving force for
+              drug-protein binding. Atomistic molecular dynamics (MD)
+              simulations are routinely used to calculate free energies of
+              small molecules binding to proteins, crossing lipid membranes,
+              and solvation but are computationally expensive. Machine learning
+              (ML) and empirical methods are also used throughout drug
+              discovery but rely on experimental data, limiting the domain of
+              applicability. We present atomistic MD simulations calculating
+              15,000 small molecule free energies of transfer from water to
+              cyclohexane. This large data set is used to train ML models that
+              predict the free energies of transfer. We show that a spatial
+              graph neural network model achieves the highest accuracy,
+              followed closely by a 3D-convolutional neural network, and
+              shallow learning based on the chemical fingerprint is
+              significantly less accurate. A mean absolute error of ∼4 kJ/mol
+              compared to the MD calculations was achieved for our best ML
+              model. We also show that including data from the MD simulation
+              improves the predictions, tests the transferability of each model
+              to a diverse set of molecules, and show multitask learning
+              improves the predictions. This work provides insight into the
+              hydrophobicity of small molecules and ML cheminformatics
+              modeling, and our data set will be useful for designing and
+              testing future ML cheminformatics methods.",
+  journal  = "J. Chem. Inf. Model.",
+  month    =  sep,
+  year     =  2020,
+  language = "en"
 }
+
+@ARTICLE{zhu2020pairwise,
+  title    = "Binding Affinity Prediction by Pairwise Function Based on Neural
+              Network",
+  author   = "Zhu, Fangqiang and Zhang, Xiaohua and Allen, Jonathan E and
+              Jones, Derek and Lightstone, Felice C",
+  abstract = "We present a new approach to estimate the binding affinity from
+              given three-dimensional poses of protein-ligand complexes. In
+              this scheme, every protein-ligand atom pair makes an additive
+              free-energy contribution. The sum of these pairwise contributions
+              then gives the total binding free energy or the logarithm of the
+              dissociation constant. The pairwise contribution is calculated by
+              a function implemented via a neural network that takes the
+              properties of the two atoms and their distance as input. The
+              pairwise function is trained using a portion of the PDBbind 2018
+              data set. The model achieves good accuracy for affinity
+              predictions when evaluated with PDBbind 2018 and with the
+              CASF-2016 benchmark, comparing favorably to many scoring
+              functions such as that of AutoDock Vina. The framework here may
+              be extended to incorporate other factors to further improve its
+              accuracy and power.",
+  journal  = "J. Chem. Inf. Model.",
+  volume   =  60,
+  number   =  6,
+  pages    = "2766--2772",
+  month    =  jun,
+  year     =  2020,
+  language = "en"
+}
+
