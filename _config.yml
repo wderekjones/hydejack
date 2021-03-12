@@ -40,7 +40,7 @@ keywords:              []
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   name:                Derek Jones
-  email:               jones289@llnl.gov
+  email:               djones@llnl.gov
   # Used by `jekyll-seo-tag`:
   twitter:             DerekScience
   social:
@@ -315,7 +315,7 @@ social:
    name:                Derek Jones
    links:
       - https://twitter.com/DerekScience
-      - https://github.com/williamdjones
+      - https://github.com/wderekjones
 
 
 # Other Plugins
